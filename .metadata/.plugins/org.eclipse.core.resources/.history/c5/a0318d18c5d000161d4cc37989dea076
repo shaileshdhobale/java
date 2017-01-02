@@ -1,0 +1,77 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.text.ParseException;
+import java.util.Iterator;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+
+public class Assignment_1 {
+private static final String filePath = "E:\\java\\Assignment_1\\src\\main\\resources\\students.json";
+	
+
+	public void writeTextFile(Iterator studObj1) throws IOException {
+		File file = new File("E:\\java\\Assignment_1\\src\\main\\resources\\destination.txt");
+	      
+	      // creates the file
+	      file.createNewFile();
+	      
+	      // creates a FileWriter Object
+	      FileWriter writer = new FileWriter(file); 
+	      
+	      // Writes the content to the file
+	      writer.write("Id | First Name | Last Name | Score \n"); 
+	      
+	      Iterator studObj2 = studObj1;
+		while (studObj1.hasNext()) {
+			JSONObject innerObj1 = (JSONObject) studObj1.next();
+			while (studObj2.hasNext()) {
+				JSONObject innerObj2 = (JSONObject) studObj2.next();
+				Long value1 = (Long) innerObj1.get("id");
+				Long value2 = (Long) innerObj2.get("id");
+				if(value1 > value2){
+					writer.write(innerObj1.get("id") + "|" + innerObj1.get("fName") + "|" + innerObj1.get("lName") + "|" + innerObj1.get("score") + "\n");
+				}
+			}
+			
+//			System.out.println("Id:  "+ innerObj.get("id") + " First Name:  " + innerObj.get("fName") + " Last Name: " + innerObj.get("lName") + "Score : " + innerObj.get("score"));
+		}
+		writer.flush();
+	    writer.close();
+	}
+	
+	
+	
+	public static void main(String[] args) throws org.json.simple.parser.ParseException {
+		Assignment_1 obj = new Assignment_1();
+		try {
+			
+			// read the json file
+			FileReader reader = new FileReader(filePath);
+
+			JSONParser jsonParser = new JSONParser();
+			JSONObject jsonObject = (JSONObject) jsonParser.parse(reader);
+
+			// get an array from the JSON object
+			JSONArray students= (JSONArray) jsonObject.get("students");
+			Iterator studObj = students.iterator();
+			obj.writeTextFile(studObj);
+			
+			
+		}
+		catch (FileNotFoundException ex) {
+			ex.printStackTrace();
+		} catch (IOException ex) {
+			ex.printStackTrace();
+		}  catch (NullPointerException ex) {
+			ex.printStackTrace();
+		}
+
+	}
+
+}
