@@ -1,0 +1,21 @@
+
+public class ThreadClass extends Thread {
+	private Thread t;
+	private String threadName;
+	public ThreadClass(String tName) {
+		threadName = tName;
+	}
+	public void run(){
+		
+	}
+	
+	public void startThread(){
+		
+	}
+}
+
+public class MultithreadingThreadClass{
+	public static void main(String a[]){
+		
+	}
+}

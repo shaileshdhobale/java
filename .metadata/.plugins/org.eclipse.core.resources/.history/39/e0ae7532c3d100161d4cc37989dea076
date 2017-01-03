@@ -1,0 +1,26 @@
+
+public class RunnableInterface {
+	public static void main(String [] args) {
+	MultithreadingRunnableInterface thread1 = new MultithreadingRunnableInterface("Thread-1");
+	
+	thread1.start();
+	MultithreadingRunnableInterface thread2 = new MultithreadingRunnableInterface("Thread-2");
+	thread2.setPriority(Thread.MIN_PRIORITY);
+	thread2.start();
+	
+//	  System.out.println("Starting thread3...");
+//	  Thread thread3 = new GuessANumber(27);
+//	  thread3.start();
+//	  try {
+//	     thread3.join();
+//	  }catch(InterruptedException e) {
+//	     System.out.println("Thread interrupted.");
+//	  }
+//	  System.out.println("Starting thread4...");
+//	  Thread thread4 = new GuessANumber(75);
+//	  
+//	  thread4.start();
+	System.out.println("main() is ending...");
+	 
+	}
+}

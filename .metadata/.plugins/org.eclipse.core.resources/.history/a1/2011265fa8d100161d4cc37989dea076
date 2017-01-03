@@ -1,0 +1,7 @@
+package Static;
+
+public class StaticPolymorphism {
+	public static void main(String args[]) {
+		
+	}
+}

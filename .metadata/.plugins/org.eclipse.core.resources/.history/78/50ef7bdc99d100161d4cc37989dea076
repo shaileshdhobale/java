@@ -1,0 +1,5 @@
+
+public class TestStudentCollege extends College {
+	College studentEntry = new College();
+	
+}

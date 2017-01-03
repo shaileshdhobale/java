@@ -1,0 +1,33 @@
+package Structure;
+import Human.*;
+public class Google extends Employee implements Organization {
+	
+	int numEmployees;
+	String nameOfOrganization;
+	@Override
+	public Integer getNumberOfEmployees() {
+		return numEmployees;
+	}
+
+	@Override
+	public String getNameOfOrganization() {
+		return nameOfOrganization;
+	}
+
+	@Override
+	public void setNumberOfEmployees(Integer numEmployees) {
+		this.numEmployees = numEmployees;
+	}
+
+	@Override
+	public void setNameOfOrganization(String nameOfOrganization) {
+		this.nameOfOrganization = nameOfOrganization;
+	}
+	
+	public static void main(String args[]){
+		
+
+	}
+	
+
+}

@@ -1,0 +1,15 @@
+package Static;
+
+public class StaticPoly {
+	public int add(int a){
+		return a;
+	}
+	
+	public int add(int a, int b){
+		return a + b;
+	}
+	
+	public double add (double a, int b){
+		return a + b;
+	}
+}

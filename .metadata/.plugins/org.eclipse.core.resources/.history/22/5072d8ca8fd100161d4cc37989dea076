@@ -1,0 +1,27 @@
+package Structure;
+package Structure;
+public class Google implements Organization {
+	
+	int numEmployees;
+	String nameOfOrganization;
+	@Override
+	public Integer getNumberOfEmployees() {
+		return numEmployees;
+	}
+
+	@Override
+	public String getNameOfOrganization() {
+		return nameOfOrganization;
+	}
+
+	@Override
+	public void setNumberOfEmployees(Integer numEmployees) {
+		this.numEmployees = numEmployees;
+	}
+
+	@Override
+	public void setNameOfOrganization(String nameOfOrganization) {
+		this.nameOfOrganization = nameOfOrganization;
+	}
+
+}

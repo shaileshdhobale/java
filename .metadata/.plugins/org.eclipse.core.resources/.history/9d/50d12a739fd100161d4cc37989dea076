@@ -1,0 +1,8 @@
+
+public class TestStudentCollege extends College {
+	public static void main(String args[]){
+		College studentEntry = new College();
+		studentEntry.setName("Shailesh");
+		System.out.println(studentEntry.getName());
+	}
+}

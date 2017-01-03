@@ -1,0 +1,13 @@
+package Static;
+
+public class StaticPolymorphism {
+	public static void main(String args[]) {
+		StaticPolyChild object = new StaticPolyChild();
+		
+		System.out.println(object.add(5));
+		System.out.println(object.add(5, 15));
+		System.out.println(object.add(5.45, 6));
+		System.out.println(object.add(5, 10, 20));
+		System.out.println(object.add(6.0, 8.5));
+	}
+}

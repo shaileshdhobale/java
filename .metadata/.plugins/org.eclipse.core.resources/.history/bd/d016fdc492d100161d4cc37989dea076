@@ -1,0 +1,42 @@
+package Structure;
+import java.util.ArrayList;
+import java.util.List;
+
+import Human.*;
+public class Google extends Employee implements Organization {
+	
+	int numEmployees;
+	String nameOfOrganization;
+	@Override
+	public Integer getNumberOfEmployees() {
+		return numEmployees;
+	}
+
+	@Override
+	public String getNameOfOrganization() {
+		return nameOfOrganization;
+	}
+
+	@Override
+	public void setNumberOfEmployees(Integer numEmployees) {
+		this.numEmployees = numEmployees;
+	}
+
+	@Override
+	public void setNameOfOrganization(String nameOfOrganization) {
+		this.nameOfOrganization = nameOfOrganization;
+	}
+	
+	public static void main(String args[]){
+		List<Google> employees = new ArrayList<Google>();
+		Google anEmployee = new Google();
+		anEmployee.setName("Shailesh Dhoable");
+		anEmployee.setSex("Male");
+		anEmployee.setNameOfOrganization("Google");
+		employees.add(anEmployee);
+		System.out.println(employees.get(0));
+
+	}
+	
+
+}

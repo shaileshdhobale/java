@@ -1,0 +1,9 @@
+
+public class RunnableInterface {
+	public static void main(String [] args) {
+	MultithreadingRunnableInterface thread1 = new MultithreadingRunnableInterface("Thread-1", "MIN_PRIORITY");
+	thread1.start();
+	MultithreadingRunnableInterface thread2 = new MultithreadingRunnableInterface("Thread-2", "HIGH_PRIORITY");
+	thread2.start();
+	}
+}

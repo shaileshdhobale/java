@@ -31,7 +31,6 @@ public class Assignment_2 extends WriteTextFile {
 			WriteTextFile textObj = new WriteTextFile();
 			textObj.writeTextFiles(studObj);
 			textObj.writeXMLFiles(studObj1);
-			
 		}
 		catch (FileNotFoundException ex) {
 			ex.printStackTrace();

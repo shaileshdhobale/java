@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Static.StaticPoly&apos; to &apos;StaticPolymorphism&apos;&#x0D;&#x0A;- Original project: &apos;Polymorphism_static&apos;&#x0D;&#x0A;- Original element: &apos;Static.StaticPoly&apos;&#x0D;&#x0A;- Renamed element: &apos;Static.StaticPolymorphism&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;StaticPoly&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Static{StaticPoly.java[StaticPoly" matchStrategy="1" name="StaticPolymorphism" qualified="false" references="true" similarDeclarations="false" stamp="1483442844918" textual="false" version="1.0"/>
+</session>

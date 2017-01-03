@@ -1,0 +1,44 @@
+package Human;
+
+import java.util.Date;
+
+public class Employee extends Person {
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getSex() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setName(String name) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setSex(String sex) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setBirthday(Date birthdate) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Date getBirthday() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}
