@@ -1,0 +1,8 @@
+
+public class NameNotFindException extends Exception {
+	
+	public NameNotFindException(String message) {
+		super(message);
+	}
+
+}

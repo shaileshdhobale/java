@@ -1,0 +1,23 @@
+import java.util.*;
+public class Exceptions 
+{
+	public static void main(String[] args)
+	{
+		String name;
+		double salary;
+		int age;
+		
+		Scanner sc=new Scanner(System.in);  
+	     
+		   System.out.println("Enter your Name");  
+		   name=sc.next();  
+		   System.out.println("Enter your Age");  
+		   age=sc.nextInt();  
+		   System.out.println("Enter your Salary");  
+		   salary=sc.nextDouble(); 	
+		   
+		   System.out.println("Name: " + name);
+		   System.out.println("Age: " + name);
+		   System.out.println("Salary: " + name);
+	}
+}
